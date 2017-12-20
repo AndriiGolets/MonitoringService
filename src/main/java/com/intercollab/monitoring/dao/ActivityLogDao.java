@@ -22,7 +22,7 @@ public class ActivityLogDao extends GlobalDao {
 
     public void startLog() {
         create(new ActivityLog(0, -1, "system", "System Start",
-                "Start", UserType.SYSTEM, "", ActivityLogLevel.ERROR));
+                "Start", UserType.SYSTEM, "", ActivityLogLevel.DEBUG));
     }
 
 

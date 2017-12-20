@@ -49,20 +49,20 @@ public class SchedulerTask {
                     activityLogDao.shutDownLog();
                     systemStatusDao.update(OFF);
                     emailService.sendMessages(
-                            "PROISSUE SERVER TURN OFF",
+                            "PROISSUE SERVER TURNED OFF",
                             "You received this message because proissue server was turned off. It can be system restart" +
                                     " for programs update in this case you have to receive SERVER START message in 2 minutes",
-                            "a3060113@gmail.com");
+                            "a3060113@gmail.com", "serge@intercollab.net", "cono@intercollab.com");
                     LOG.info(" !! OFF");
                 }
             } else {
                 if (time.plusSeconds(8L).isAfter(LocalTime.now())) {
                     activityLogDao.startLog();
                     systemStatusDao.update(ON);
-                    emailService.sendSimpleMessage(
+                    emailService.sendMessages(
                             "PROISSUE SERVER START",
                             "You received this message because proissue server was started. Maybe with some new updates )",
-                            "a3060113@gmail.com");
+                            "a3060113@gmail.com", "serge@intercollab.net", "cono@intercollab.com");
                     LOG.info(" !! ON");
                 }
             }

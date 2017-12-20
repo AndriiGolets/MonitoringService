@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/dataSources.local.xml
+.idea/dataSources/6bb1c9d7-462e-4da4-af78-4f41243fa1e7/_src_/
+.idea/dataSources/6bb1c9d7-462e-4da4-af78-4f41243fa1e7/_staging_/
+.idea/inspectionProfiles/
+.idea/vcs.xml
+.idea/workspace.xml
+src/test/
+target/
